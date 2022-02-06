@@ -1,12 +1,24 @@
-$text: #27300f;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap');
+
+$green: #27300f;
 $orange: #d26a22;
 $white: #FFFFFF;
+$font-cormorant: 'Cormorant', serif;
+$font-jost: 'Jost', sans-serif;
 
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem;
+    font-family: $font-jost;
+}
 .header {
     max-width: 1440px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;  
+    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,12 +27,12 @@ $white: #FFFFFF;
         list-style-type: none;
         margin: 0;
         padding-left: 0;
-        gap: 48px;
+        gap: 4.8rem;
     }
     &__link {
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 400;
-        color: $text;
+        color: $green;
         text-decoration: none;
         transition: .2s ease;
         &:hover {
@@ -31,9 +43,9 @@ $white: #FFFFFF;
         color: $orange;
     }
     &__tel {
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 500;
-        color: $text;
+        color: $green;
         text-decoration: none;
         transition: .2s ease;
         &:hover {
@@ -44,20 +56,26 @@ $white: #FFFFFF;
         background-image: url(../images/Icons/cart-white.svg);
         background-color: $orange;
         background-repeat: no-repeat;
-        background-size: 16px 17px;
+        background-size: 1.6rem 1.7rem;
         background-position: center center;
-        width: 40px;
-        height: 40px;
+        width: 3.8rem;
+        height: 3.8rem;
         border-radius: 100%;
+        border: 1px solid $orange;
         position: relative;
+        transition: .2s ease;
+        &:hover {
+            background-color: $green;
+            border: 1px solid $green;
+        }
     }
     &__counter {
-        font-size: 8px;
+        font-size: .8rem;
         font-weight: 350;
         color: $white;
         position: absolute;
-        top: 8px;
-        right: 8px;
+        top: .8rem;
+        right: .8rem;
     }
 }
 .logo {
@@ -65,6 +83,6 @@ $white: #FFFFFF;
     background-image: url(../images/logo.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 125px;
-    height: 32px;
+    width: 12.5rem;
+    height: 3.2rem;
 }
