@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,49 +9,72 @@
 <body>
    <div class="main">
        <header class="header">
-           <a href="#" class="logo"></a>
-           <nav>
-               <ul class="header__nav">
-                   <li class="heade__item">
-                       <a href="#" class="header__link">Наша продукция</a>
-                    </li>
-                   <li class="heade__item">
-                       <a href="#" class="header__link header__link_active">О компании</a>
-                    </li>
-                   <li class="heade__item">
-                       <a href="#" class="header__link">Новинки</a>
-                    </li>
-                   <li class="heade__item">
-                       <a href="#" class="header__link">Каталог</a>
-                    </li>
-                   <li class="heade__item">
-                       <a href="#" class="header__link">Доставка</a>
-                    </li>
-                   <li class="heade__item">
-                       <a href="#" class="header__link">Контакты</a>
-                    </li>
-               </ul>
-           </nav>
-           <a href="tel:+79453425555" class="header__tel">+7 945 342 55 55</a>
-           <button href="#" class="header__cart">
-               <span class="header__counter">0</span>
+            <a href="#" class="logo"></a>
+            <nav class="header__box">
+                <ul class="header__nav">
+                    <li class="header__item">
+                        <a href="#" class="header__link">Наша продукция</a>
+                        </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link header__link_active">О компании</a>
+                        </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Новинки</a>
+                        </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Каталог</a>
+                        </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Доставка</a>
+                        </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Контакты</a>
+                        </li>
+                </ul>
+            </nav>
+            <div class="header__inner">
+                <a href="tel:+79453425555" class="header__tel">+7 945 342 55 55</a>
+                <button href="#" class="header__cart">
+                <span class="header__counter">0</span>
             </button>
+            </div>
        </header>
        <div class="container">
-           <div class="main__text">
-                <h1 class="title title_block">Здоровая еда &ndash;
-                    <span class="title__span">это просто!</span>
-                </h1>
-                <div class="main__item">
-                    <p class="description description_size-s">
+           <div class="main__flex">
+                <div class="main__text">
+                    <h1 class="title title_block">Здоровая еда -
+                        <span class="title__span">это просто</span>
+                    </h1>
+                    <div class="main__item">
+                        <p class="description description_size-s">
                         Сеть магазинов полезных продуктов питания,  производство которых основано на принципах и&nbsp;стандартах органически чистых продуктов
-                    </p>
-                    <div class="main__link">
-                        <a href="#"class="link">Перейти в каталог</a>
+                        </p>
+                        <div class="main__link">
+                            <a href="#"class="link">Перейти в каталог</a>
+                        </div>
                     </div>
+                </div>
+                <div class="main__cover">
+                    <div class="main__line">
+                        <img class="main__image" src="images/plate.png" alt="Тарелка">
+                    </div>
+                    <button class="main__btn main__btn_01">
+                        <span class="main__food">Авокадо</span> 134 руб
+                    </button>
+                    <button class="main__btn main__btn_02">
+                        <span class="main__food">Картофель</span> 169 руб
+                    </button>
+                    <button class="main__btn main__btn_03">
+                        <span class="main__food">Томаты</span> 215 руб
+                    </button>
                 </div>
            </div>
        </div>
+       <img class="main__tomato" src="images/tomato.png" alt="Томат">
+       <img class="main__avocado" src="images/avocado.png" alt="Авокадо">
+       <img class="main__beans" src="images/beans.png" alt="Фасоль">
+       <img class="main__pepper" src="images/pepper.png" alt="Перец">
+       <img class="main__cucumber" src="images/cucumber.png" alt="Огурец">
    </div>
 </body>
 </html>

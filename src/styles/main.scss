@@ -22,11 +22,20 @@ body {
 }
 .header {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto 5rem;
     padding: 4rem 15px 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8rem;
+    }
+    &__box {
+        flex-basis: 57%;
+    }
     &__nav {
         display: flex;
         list-style-type: none;
@@ -48,6 +57,7 @@ body {
     }
     &__tel {
         font-weight: 500;
+        letter-spacing: .12rem;
         color: $green;
         text-decoration: none;
         transition: .2s ease;
@@ -86,16 +96,148 @@ body {
     background-image: url(../images/logo.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 12.5rem;
+    width: 12rem;
     height: 3.2rem;
+    margin-right: 10px;
 }
 .main {
     background-image: url(../images/main.png);
     background-size: cover;
     background-position-x: center;
+    padding-bottom: 19rem;
+    position: relative;
+    z-index: 1;
+    &__text {
+        margin-top: 4rem;
+    }
     &__item {
         margin-left: 12rem;
+        margin-top: 6.3rem;
+        line-height: 1.46;
         max-width: 378px;
+    }
+    &__link {
+        margin-top: 5.5rem;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+    }
+    &__cover {
+        flex-basis: 760px;
+        height: 758px;
+        border: 1px solid rgba($green, .4);
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    &__line {
+        width: 658px;
+        height: 654px;
+        box-shadow: 0 0 0 1px rgba($green, .4);
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__image {
+        width: 92%;
+        box-shadow: 25px 30px 35px -8px rgb(39 48 15 / 40%);
+        border-radius: 100%;
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        position: absolute;
+        color: $green;
+        text-align: left;
+        &:hover {			
+			&::before {
+				background-color: $orange;
+				box-shadow: 0 0 0 4px $white, 0 0 0 5px $orange;
+            }	
+        }
+        &::before {
+            content: '';
+            background-color: $green;
+            width: 11px;
+            height: 11px;
+            box-shadow: 0 0 0 4px $white, 0 0 0 5px $green;
+            border-radius: 100%;
+            position: absolute;
+        }
+        &_01 {
+            top: 44px;
+            left: 63px;
+            &::before {
+                right: -36px;
+                bottom: 8px;
+            }
+        }
+        &_02 {
+            top: 192px;
+            right: 2px;
+            &::before {
+                top: 18px;
+                right: 88px;
+            }
+        }
+        &_03 {
+            bottom: -49px;
+            right: 244px;
+            &::before {
+                bottom: 55px;
+                right: 31px;
+            }
+        }
+    }
+    &__food {
+        display: block;
+        color: rgba($green, .8);
+        padding-bottom: 5px;
+        z-index: -1;
+    }
+    &__tomato {
+        position: absolute;
+        width: 11rem;
+        bottom: 117px;
+        right: -100px;
+        z-index: -1;
+    }
+    &__avocado {
+        position: absolute;
+        width: 17.8rem;
+        top: 47px;
+        right: -226px;
+        z-index: -1;
+    }
+    &__beans {
+        position: absolute;
+        width: 10rem;
+        bottom: 165px;
+        left: 0;
+        z-index: -1;
+    }
+    &__pepper {
+        position: absolute;
+        width: 8.5rem;
+        top: 400px;
+        left: 65px;
+        z-index: -1;
+    }
+    &__cucumber {
+        position: absolute;
+        width: 8.5rem;
+        top: 0;
+        left: 469px;
+        z-index: -1;
     }
 }
 .title {
@@ -103,8 +245,14 @@ body {
     font-weight: 700;
     font-size: 8rem;
     margin: 0;
+    line-height: 1;
     &__span {
         font-style: italic;
+        &::after {
+            content: '!';
+            font-family: $font-cormorant;
+            font-style: normal;
+        }
     }
     &_block {
         .title__span {
@@ -121,12 +269,11 @@ body {
 .link {
     color: $white;
     text-transform: uppercase;
-    padding: 2.5rem 4.2rem;
+    letter-spacing: .13rem;
+    padding: 2.1rem 4.2rem;
     background-color: $orange;
     box-shadow: 0px 10px 11.18px 1.82px rgba(207, 92, 13, 0.2);
     text-decoration: none;
     border-radius: 3.8rem;
     display: inline-block;
-    margin-top: 6rem;
 }
-  
