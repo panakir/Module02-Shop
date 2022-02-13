@@ -349,20 +349,23 @@ body {
         &__hidden {
             overflow: hidden;
             height: 0;
+            margin-top: 10px;
             transition: .2s ease;
             z-index: 1;
         }
         &__text {
-            margin: 0;
             color: rgba($green, .7);
             line-height: 1.5;
             font-size: 1.6rem;
             max-width: 265px;
+            margin-bottom: 35px;
         }
     }
     &-slide-link {
+        font-weight: 700;
         text-decoration: none;
         text-transform: uppercase;
+        letter-spacing: 1px;
         color: rgba($green, .8);
         display: flex;
         justify-content: flex-start;
