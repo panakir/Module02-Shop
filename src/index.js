@@ -1,4 +1,4 @@
-import './index.html'
+
 import 'normalize.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
