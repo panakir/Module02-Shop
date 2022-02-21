@@ -722,6 +722,9 @@ body {
     }
     &__item {
         opacity: .4;
+        &:hover {
+            opacity: 1;
+        }
         &:nth-child(1){
             background-image: url(../images/mastercard.png);
             background-position: center center;
