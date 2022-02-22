@@ -691,7 +691,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-bottom: 14rem;
+    padding-bottom: 11rem;
     &__box {
         margin-top: 7.5rem;
         margin-left: 12rem;
@@ -751,7 +751,7 @@ body {
 }
 .contact {
     padding-top: 7.5rem;
-    padding-bottom: 8rem;
+    padding-bottom: 16rem;
     &-box {
         display: flex;
         justify-content: space-between;
@@ -855,6 +855,10 @@ body {
         border-bottom: 1px solid #dfe0db;
     }
 }
+footer {
+    padding-top: 9rem;
+    border-top: 1px solid #d4d6cf;
+}
 .footer {
     background-image: url(../images/footer.png);
     background-size: cover;
@@ -865,9 +869,13 @@ body {
         display: flex;
         justify-content: space-between;
     }
+    &__logo {
+        flex-basis: 21.3%;
+    }
     &__list {
         list-style: none;
         padding-left: 0;
+        margin: 0;
         font-size: 1.8rem;
     }
     &__item {
@@ -912,6 +920,7 @@ body {
         color: rgba($green, .6);
     }
     &__author {
+        letter-spacing: .08rem;
         &:hover {
             .footer__author__link {
                 color: $green;
@@ -928,6 +937,8 @@ body {
     padding-left: 0;
     display: flex;
     justify-content: space-between;
+    margin-top: 2.8rem;
+    margin-bottom: 4.2rem;
     &__item {
         display: block;
         opacity: .8;
