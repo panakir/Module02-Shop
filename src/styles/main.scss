@@ -96,9 +96,13 @@ body {
     background-image: url(../images/logo.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 12rem;
+    width: 12.3rem;
     height: 3.2rem;
     margin-right: 10px;
+    &_footer {
+        width: 18rem;
+        height: 4.7rem;
+    }
 }
 .main {
     background-image: url(../images/main.png);
@@ -722,41 +726,32 @@ body {
     }
     &__item {
         opacity: .4;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
         &:hover {
             opacity: 1;
         }
         &:nth-child(1){
             background-image: url(../images/mastercard.png);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
             width: 5.3rem;
             height: 3.2rem;
         }
         &:nth-child(2){
             background-image: url(../images/visa.png);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
             width: 7.4rem;
             height: 2.3rem;
         }
         &:nth-child(3) {
             background-image: url(../images/paypal.png);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: 8.7rem 2.4rem;
             width: 8.7rem;
             height: 2.4rem;
         }
     }
 }
 .contact {
-    background-image: url(../images/contact.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     padding-top: 7.5rem;
+    padding-bottom: 8rem;
     &-box {
         display: flex;
         justify-content: space-between;
@@ -789,29 +784,25 @@ body {
             justify-content: start;
             gap: 3.3rem;
             align-items: center;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 2.9rem;
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
             &_phone {
                 margin-bottom: 2rem;
                 &::before {
-                    content: '';
-                    display: inline-block;
-                    width: 2.9rem;
                     height: 2.5rem;
                     background-image: url(../images/phone.png);
-                    background-position: center center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
                 }
             }
             &_mail {
                 &::before {
-                    content: '';
-                    display: inline-block;
-                    width: 2.9rem;
                     height: 1.9rem;
                     background-image: url(../images/mail.png);
-                    background-position: center center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
                 }
             }
         }
@@ -862,5 +853,110 @@ body {
         text-decoration: none;
         color: rgba($green, .6);
         border-bottom: 1px solid #dfe0db;
+    }
+}
+.footer {
+    background-image: url(../images/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 8.5rem;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        list-style: none;
+        padding-left: 0;
+        font-size: 1.8rem;
+    }
+    &__item {
+        padding-bottom: 3rem;
+        transition: .2s ease;
+        &:hover {
+            color: $orange;
+        }
+    }
+    &__link {
+        color: $green;
+        text-decoration: none;
+        transition: .2s ease;
+        &:hover {
+            color: $orange;
+        }
+    }
+    &__tel {
+        display: block;
+        font-size: 2.7rem;
+        color: $green;
+        text-decoration: none;
+        padding-bottom: 3.2rem;
+        transition: .2s ease;
+        &:hover {
+            color: $orange;
+        }
+    }
+    &__mail {
+        display: block;
+        font-size: 1.8rem;
+        color: $green;
+        text-decoration: none;
+        transition: .2s ease;
+        &:hover {
+            color: $orange;
+        }
+    }
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        color: rgba($green, .6);
+    }
+    &__author {
+        &:hover {
+            .footer__author__link {
+                color: $green;
+            }
+        }
+        &__link {
+            text-decoration: none;
+            color: rgba($green, .6);
+        }
+    }
+}
+.footer-social {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        display: block;
+        opacity: .8;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__link {
+        box-sizing: border-box;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 100%;
+		border: 3px solid $green;
+		color: $green;
+		width: 50px;
+		height: 50px;
+		transition: 0.2s ease-in;
+		display: block;		
+    }
+    &__vk {
+        background-size: 23px auto;
+        background-image: url(../images/vk.svg);
+    }
+    &__inst {
+        background-size: 23px auto;
+        background-image: url(../images/inst.svg);
+    }
+    &__fb {
+        background-size: 23px auto;
+        background-image: url(../images/fb.svg);
     }
 }
