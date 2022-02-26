@@ -99,6 +99,11 @@ body {
     width: 12.3rem;
     height: 3.2rem;
     margin-right: 10px;
+    transform: scale(1);
+    transition: .2s ease;
+    &:hover {
+        transform: scale(1.13)
+    }
     &_footer {
         width: 18rem;
         height: 4.7rem;
@@ -796,12 +801,22 @@ body {
             }
             &_phone {
                 margin-bottom: 2rem;
+                transition: .2s ease;
+                color: $green;
+                &:hover {
+                    color: $orange;
+                }
                 &::before {
                     height: 2.5rem;
                     background-image: url(../images/phone.png);
                 }
             }
             &_mail {
+                color: $green;
+                transition: .2s ease;
+                &:hover {
+                    color: $orange;
+                }
                 &::before {
                     height: 1.9rem;
                     background-image: url(../images/mail.png);
