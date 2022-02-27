@@ -158,8 +158,8 @@ body {
     }
     &__image {
         width: 92%;
-        box-shadow: 25px 30px 35px -8px rgb(39 48 15 / 40%);
         border-radius: 100%;
+        animation: shadow 3s linear infinite;
     }
     &__btn {
         background-color: transparent;
@@ -540,6 +540,9 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
+        animation: pulse .5s linear infinite;
+        animation-direction: alternate;
+        animation-delay: 3s;
         &::before {
             content: "";
             display: flex;
@@ -583,6 +586,7 @@ body {
 .catalog {
     background-image: url(../images/catalog.png);
     padding-top: 6.6rem;
+    padding-bottom: 13.7rem;
     &__type {
         display: flex; 
         justify-content: flex-start;
@@ -617,7 +621,7 @@ body {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
-        margin-bottom: 6rem;
+        margin-bottom: 5.8rem;
     }
     &__item {
         padding: 3rem 2.5rem 4rem 3rem;
@@ -690,7 +694,6 @@ body {
             opacity: 1;
         }
     }
-    padding-bottom: 13.5rem;
 }
 .delivery {
     background-image: url(../images/delivery.png);
@@ -798,6 +801,7 @@ body {
                 background-position: center center;
                 background-size: cover;
                 background-repeat: no-repeat;
+                animation: shake 1s linear infinite alternate ;
             }
             &_phone {
                 margin-bottom: 2rem;
@@ -897,10 +901,6 @@ footer {
     }
     &__item {
         padding-bottom: 3rem;
-        transition: .2s ease;
-        &:hover {
-            color: $orange;
-        }
     }
     &__link {
         color: $green;
@@ -986,5 +986,53 @@ footer {
     &__fb {
         background-size: 23px auto;
         background-image: url(../images/fb.svg);
+    }
+}
+
+
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba($green, .5);
+    }
+    50% {
+        box-shadow: 20px 20px 35px 0 rgba($green, .5);
+    }
+    0% {
+        box-shadow: 0 0 0 0 rgba($green, .5);
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes shake {
+    0% {
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    75%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
     }
 }
