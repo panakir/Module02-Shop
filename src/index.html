@@ -8,9 +8,9 @@
 </head>
 <body>
    <div class="main">
-       <header class="header">
+       <header id="open"   class="header">
             <a href="#" class="logo"></a>
-            <nav class="header__box">
+            <nav id="close" class="header__box">
                 <ul class="header__nav">
                     <li class="header__item">
                         <a href="#offer" class="header__link">Наша продукция</a>
@@ -34,9 +34,14 @@
             </nav>
             <div class="header__inner">
                 <a href="tel:+79453425555" class="header__tel">+7 945 342 55 55</a>
-                <button href="#" class="header__cart">
-                <span class="header__counter">0</span>
-            </button>
+                <div class="header__buttons">
+                    <a href="tel:+79453425555" class="header__phone"></a>
+                    <a href="#open" class="header__menu_open"></a>
+                    <a href="#close" class="header__menu_close"></a>
+                    <button href="#" class="header__cart">
+                        <span class="header__counter">0</span>
+                    </button>
+                </div>
             </div>
        </header>
        <div class="container">
