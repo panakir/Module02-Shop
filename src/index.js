@@ -10,7 +10,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 var swiper = new Swiper(".offerSwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -22,12 +22,28 @@ var swiper = new Swiper(".offerSwiper", {
       prevEl: ".swiper-button-prev",
     },
     modules: [Navigation, Pagination],
+    breakpoints: {
+      315: {
+        slidesPerView: 1,
+        spaceBetween: 30
+        
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1000: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+    }
   });
+
 
   var swiper = new Swiper(".trendsSwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -39,4 +55,19 @@ var swiper = new Swiper(".offerSwiper", {
       prevEl: ".swiper-button-prev",
     },
     modules: [Navigation, Pagination],
+    breakpoints: {
+      315: {
+        slidesPerView: 1,
+        spaceBetween: 20
+        
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1000: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+    }
   });
