@@ -2068,6 +2068,7 @@ footer {
         transition: .2s ease;
         @media (max-width:$r_tab) {
             font-size: 3rem;
+            padding-bottom: 0;
         }
         &:hover {
             color: $orange;
@@ -2151,6 +2152,9 @@ footer {
     gap: 3rem;
     margin-top: 2.8rem;
     margin-bottom: 4.2rem;
+    @media (max-width: $r_tab) {
+        margin: 3rem auto;
+    }
     &__item {
         display: block;
         opacity: .8;
