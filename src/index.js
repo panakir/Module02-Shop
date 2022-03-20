@@ -71,3 +71,25 @@ var swiper = new Swiper(".offerSwiper", {
       },
     }
   });
+
+// swiper for buttons
+
+var swiper = new Swiper(".btnSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  freeMode: true,
+  breakpoints: {
+    315: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1000: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+  }
+});
