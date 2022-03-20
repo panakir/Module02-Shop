@@ -626,7 +626,6 @@ body {
             transform: rotate(90deg);
             width: 5rem;
         }
-
     }
 }
 .title {
@@ -1400,7 +1399,7 @@ body {
         overflow: hidden;
         height: 8rem;
         @media (max-width:$r_mob_500) {
-            height: 5rem;
+            height: 6rem;
         }
         @media (max-width:$r_mob_400) {
             padding-bottom: 3rem;
