@@ -80,10 +80,10 @@ var swiper = new Swiper(".btnSwiper", {
   freeMode: true,
   breakpoints: {
     315: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 10,
     },
-    1000: {
+    900: {
       slidesPerView: 4,
       spaceBetween: 20,
     },
