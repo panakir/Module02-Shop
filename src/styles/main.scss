@@ -876,6 +876,7 @@ body {
         &_btn {
             border: none;
             padding: 0;
+            height: 8rem;
             @media (max-width:$r_desk) {
                 min-width: 215px;
             }
@@ -886,7 +887,7 @@ body {
                 min-width: 150px;
             }
             @media (max-width:$r_mob_400) {
-                min-width: 111px;
+                min-width: 110px;
             }
         }
         &:hover:not(&_btn){
